@@ -14,3 +14,7 @@ jobs:
         run: |
           echo "Pinging Render server..."
           curl -s --retry 3 --max-time 30 https://bankingnoti.onrender.com/health || echo "Server might still be waking up"
+      - name: Ping worktime-dux3
+        run: |
+          echo "Pinging worktime-dux3..."
+          curl -s --retry 3 --max-time 30 https://worktime-dux3.onrender.com/health || echo "worktime-dux3 server might still be waking up"
