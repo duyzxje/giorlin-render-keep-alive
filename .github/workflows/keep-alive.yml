@@ -2,8 +2,8 @@ name: Keep Render Alive
 
 on:
   schedule:
-    # Chạy mỗi 7 phút (theo giờ UTC)
-    - cron: "*/2 * * * *"
+    # Chạy mỗi 5 phút (theo giờ UTC)
+    - cron: "*/5 * * * *"
   workflow_dispatch: # Cho phép bấm nút chạy tay
 
 jobs:
